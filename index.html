@@ -3,7 +3,7 @@
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.min.css">
         <meta charset="utf-8">
         <title class="title">SCANDI</title>
     </head>
@@ -30,12 +30,13 @@
                     <li class="header-navigation__item header-navigation__item-application">
                         <a class="header-navigation__link" href="#application">Оставить заявку</a>
                     </li>
+                    
                 </ul>
                 <a class="header-navigation__link" href="tel:79818574624">+7 (981) 857-46-24</a>
             </nav>
             <h1 class="header__title">Поможем сделать<br> вашу квартиру<br> уютнее</h1>
             <p class="header__text">Подбираем текстиль, мебель и аксессуары<br> под ваш интерьер, находим магазины<br> и помогаем организовать доставку </p>
-            <button class="header__button">Оставить заявку</button>
+            <a class="header__link" href="#application-content-form-id">Оставить заявку</a>
         </header>
         <main>
             <section class="about">
@@ -136,10 +137,10 @@
                     <div class="application-content__container">
                         <h2 class="application__title">Оставить заявку</h2>
                         <p class="application-content__text">Оставьте свои контакты. Менеджер перезвонит<br> в удобное вам время и ответит на все вопросы.</p>
-                        <form class="application-content__form application-content-form">
+                        <form class="application-content__form application-content-form" action="#" id="application-content-form-id">
                             <input class="application-content-form__name" type="text" placeholder="Ваше имя"><br>
                             <input class="application-content-form__phone" type="tel" placeholder="Введите телефон"><br>
-                            <button class="application-content-form__button">Оставить заявку</button>
+                            <input class="application-content-form__button" type="submit" name="leave-an-application" value="Оставить заявку"></button>
                         </form>
                     </div>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651563!2d30.320894616062876!3d59.9387941818763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1616155607179!5m2!1sru!2sru" width="590" height="624" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
