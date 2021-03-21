@@ -44,7 +44,7 @@
         background-color: var(--platinum);
         
         padding: 0;
-        margin: 0 auto;}
+        margin: 0;}
         
         .index {
         width: 1400px;
@@ -71,8 +71,8 @@
         display: flex;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-flow: row, wrap;
-                flex-flow: row, wrap;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
                 -webkit-box-pack: start;
                     -ms-flex-pack: start;
                         justify-content: flex-start;
@@ -118,8 +118,8 @@
         display: flex;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-flow: row, wrap;
-                flex-flow: row, wrap;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
         -webkit-box-pack: start;
             -ms-flex-pack: start;
                 justify-content: flex-start;
@@ -132,7 +132,7 @@
         width: -moz-max-content;
         width: max-content;
         height: 19.2px;
-        margin: 0 26px 0 0;}
+        margin: 0 26px 20px 0;}
 
         .header-navigation__item:last-child {
         margin: 0;}
@@ -170,24 +170,25 @@
         .header__text {
         margin: 0 0 23px 185px;}
         
-        .header__button {
-        width: 310px;
-        height: 76px;
-        
+        .header__link {
         font-size: 20px;
         line-height: 24.38px;
         font-weight: 500;
+        text-decoration: none;
+
+        display: inline-block;
         
+        color: var(--dark-red-grey);
         background-color: var(--light-red);
 
         border: none;
         
         padding: 25px 45px 24px 47px;
-        margin-left: 181px;
+        margin: 0 0 0 181px;
         
         cursor: pointer;}
 
-        .header__button:hover {
+        .header__link:hover {
         color: var(--white);
         background-color: var(--light-red-9);}
         /*ABOUT*/
@@ -209,8 +210,8 @@
         display: flex;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-flow: row, wrap;
-                flex-flow: row, wrap;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;}
@@ -472,7 +473,8 @@
         
         background-color: var(--purple-grey);
         
-        border-radius: 50%;}
+        border-radius: 50%;
+        }
         /*REVIEWS*/
         .reviews {
         padding: 65px 182px;
